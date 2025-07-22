@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower-Shop</title>
+    <link rel="stylesheet" href="csgg.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" name="" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+      <a href="#" class="logo">Folwer <span>.</span></a>
+      <nav class="contace">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Review</a>
+        <a href="#">Contact</a>
+      </nav>
+      <nav class="Icon">
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-heart"></i></a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="contain">
+        <h3>fresh Flower</h3>
+        <span> natural and beautiful</span>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+          possimus nobis nostrum soluta vero! Dolore optio atque, laboriosam
+          culpa iusto nam aliquam nostrum quam eius velit quasi perspiciatis.
+          Vel repudiandae, autem laudantium assumenda inventore tempore fugit
+          excepturi facilis dolorem nisi.
+        </p>
+        <a href="#" class="btn">Shop now</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h1 class="heading"><span>about </span>Us</h1>
+      <div class="row">
+        <div class="video">
+          <video src="/image/video.mp4  " loop autoplay muted></video>
+          <h3>Best Flower Sellers</h3>
+        </div>
+        <div class="content">
+          <h3>Why Chose Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugit,
+            cumque cum quia a laborum nam mollitia optio culpa. Blanditiis .
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus porro
+            ipsa eaque laudantium nostrum veritatis rerum, velit amet unde,
+            eveniet ut explicabo exercitationem aspernatur! Nisi sint maxime
+            ducimus ipsum repudiandae, quae ipsam possimus pariatur eum sequi
+            obcaecati, ullam molestias excepturi delectus consequatur
+            voluptatibus. Voluptas repellat eius veritatis quaerat nisi?
+          </p>
+          <a href="" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="icon-container">
+      <div class="icon1">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAAC2trbLy8uGhoZtbW2oqKiYmJjy8vIjIyPv7+8VFRW7u7tycnL09PSKiorp6emsrKxJSUk6OjqhoaHd3d3S0tKQkJDk5ORoaGja2tr5+fkQEBDExMRra2svLy9cXFwdHR17e3tPT09gYGBAQEBUVFScnJwnJycwMDCzjQTJAAAHa0lEQVR4nO2d6WKiMBCAQa1oxQMPPNBWcav2/V9wrQs5yEyCGCth5/tpwsiHBHLreQRBEARBEARBEARBEARBEARBEARBEARBEARBEARB/CpJ3KoNYfwEwfjTrxN9646rVyspLCwbvr1aSGFt2XD7aiGFy8iu4at9VAbvZEiG/6vhNu28lvGzDS+J3bjVz2SwGvVKUPqJm8ft95559veciT8ow+EyXQel6j81NLyDfsd82m4bXhmbipfzhv6hXS6uu4a+H5WK67Khfy4T12lD7a/YDEN/Y47ruOHFHLc+hgOltsI8pBdDvBQVA2PcGhkq9VKmUXQXHLfo+Ttt6O244twU101Dr83Spqa4jhp6HZY4McR11TBhidg70XVDL80TU0NcZw3DPHFriOus4YSlIr0fzht6X3lqqI/rruEwT+3o47pr2MpTv/Vx3TVcGAqi+4ZeP0+GuzMaYLjPk5fauA4bdvPkkzauw4ZxnnwAHRpgyNPBvowmGE7zdLCN2ATDIE9/08V12ZC19A+6uC4bjlgGqBXcBENeEKFWcCMMWVcG1ApuhCFrBQ80cZ025FPXAItGGHqzPMcOj+u24UeeY4zHddswynN84XHdNtzkObZqK7gZhjyLOgGlIYanPIs6ytYQw3me5Q8a13FD3gpGx1edMNRMDmJ5lGniThl2xhjLQZ6nix3thGEZhtjRjTH0OyP46OYY+oMIPLpBhr4/i4Gj62w4gD10rN+VuHU2HMIWeoKkELfOhgvYwcBnKMetsyGvsdzHcSXGrbWh5+3KrF6MlIWGncQZw5Kci4pfScMMvUlxtWHQNMNrc38mGV6aZ+h50UFUbKKhN1o23dDzVvumG3repXmGcbAUGA+aZpj88RFY3BqtP6xiiApyw+367bWwBkQVww1sJxnWhyqGLTxcQwy7eDgyfAFk+J8b/unOb5zVN359eMgwX02aqLW2+vCQYT582GMTh5nhYdd+LbFVw5Fq2Le87839WDHU3KVu17yZYX+W4TfVUIUMbyRx6/qa6bY2T21hGQ3fd9H1TdfdrdSkhwzjjtA9dwxs76bG0RqOwuGBn8Y6KuSpbpjMZ8UjTsgSsSu9bjq8chYu8mQ+LAlbKQkYTjrKANuHNC8/LCaXNYzAkbsvZOMbvuqYDcJqvhlFNeyA+YQhQq9XzXAyxY4CF6SK+xNmK5AqDYsVDdtoTmE0O0IzaQx36EG+PwNK+1hIz9bnVNqysGAYaLIK8y5CpThl4Ib4Vbmdhro8ReoM+vcR9q360JJhqs17FGpiE5EFUGsrGOoFfWAFDmD4hR2sQzI0DXDP1HvpBlQvlQ11t2hG8YEwF9KygjpGD9YgGsLPGJEjbAi0LWTDiRzmczg+B521vE9mcTpuItyT2cqOUZWdNQXDwqN4mi7PQXqSPwTmPZcxlJ6i6SKryyRt6U4sLmjsHbOET1YtmFQoidzwXfp8nn8+akmj2eDKUZOhWAjXkvpGLFpKUVyFP0gfL8KSsHLBDffCd8kzY1vCzQFuvmMwTITjlXU2QtHYQ7EroxgKMzC2xYv5Ltxl0Jo8g6HwzADWLwgvKM3uTPejGPICdwBWbAmKQDC9YfKN/4I/8Ce41S1/i4ZChQiq7ie8MLbUVL0hryaBKxY9j18Bm10fRUNeHAADT7wCwOY7ekNejTCtaES+uxoFQ/7ywXYP4pdArUMChsL4Ifv5kY0mhDKA/MiVYIb/rit/JWP7IvKXidqgA3qiBssgg09kAKrX/2CDWf1zYAs2nWl7O5Mzq7Vj+84I9cSjchrLUn3eWJ1PqfI8F7jS8kOp1qfOENuWyKs0p7UyeFkvtWO+zhDfxs47ag6zjaZnqMzhukzKygXOh+Yw2zxqqKn9awzXtk6/BOjzrpThVvdrwJuh3EB7cJ5AiY07NbzpOouU1Sec3/xHBXz31TJPmus93r5giZ8PhbYG/kg39rT4l1ttIWlHXRHeskDvD9bFfJEPtUjE62SoIWt87OHTiNrIMASrEKJXz5zjcXitAutk53cS0MbTYtxOslU59D2w3gSstAxN54nC29bwxku9g/kGsgBvacObWbcNp6mD98WA1RreffLEm1R6nEEDJe+85oiPFWEIzyjgUS30QmtexhYQOvbUeo3QxK9yJwkvkGLNfiR0gGlemDYQ30nFAr8Q6v5VmuFij/dUukXCg5D03J9QHrNIxadJIg7XABtFlEDq+d3vst6MSSQNRKC7L9tiJDXS0vxSb4K++Hm1Dr+RFMP3v9dpui98trclglMcOvwadobHQo2x6nXWTCvOAPfVso1mfD6j+rMAH3nNBO99y1ZDNz76g7pJRHn0iv3fETQpPtYlvdD8MeLp99YuaCap61qwpUjQEWbtf4LYZoU1t/sWasVtMPjHs9+DReTlduwHtDOksDsVA789b1YUShL1FT978/Am3ROrxH2vw1ctHtosp/n7fztLDX+AdD+ruB2G7c1v350Feot4F+7ijeV/niMIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIwiJ/AcZNgi7ZWMdiAAAAAElFTkSuQmCC"
+          alt=""
+          style="mix-blend-mode: multiply"
+        />
+        <div class="info">
+          <h4>Free Delivery</h4>
+          <span>on all orders</span>
+        </div>
+      </div>
+      <div class="icon1">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/536/536011.png"
+          alt=""
+          style="mix-blend-mode: multiply"
+        />
+        <div class="info">
+          <h4>10 days return</h4>
+          <span>moneyback guaratee</span>
+        </div>
+      </div>
+      <div class="icon1">
+        <img
+          src="../PJ$/image/image6.jpg"
+          alt=""
+          style="mix-blend-mode: multiply"
+        />
+
+        <div class="info">
+          <h4>offer & gifs</h4>
+          <span>on all orders</span>
+        </div>
+      </div>
+      <div class="icon1">
+        <img src="" alt="" style="mix-blend-mode: multiply" />
+        <div class="info">
+          <h4>securse payment</h4>
+          <span>Protected paypal</span>
+        </div>
+      </div>
+    </section>
+    <section class="product" id="product">
+      <h3 class="heading">lates <span>product</span></h3>
+      <div class="box-container">
+        <div class="box">
+          <span class="Discount">-10%</span>
+          <div class="image1">
+            <img
+              src="https://m.media-amazon.com/images/I/61B-llDhAEL._AC_UL640_FMwebp_QL65_.jpg"
+              alt=""
+            />
+            <div class="icon11">
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="cart-btn">add to card</a>
+              <a href="" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flowr pot</h3>
+            <div class="price">12.99$ <span>15.99$</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="Discount">-15%</span>
+          <div class="image1">
+            <img src="/image/image6.jpg" alt="" />
+            <div class="icon11">
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="cart-btn">add to card</a>
+              <a href="" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flowr pot</h3>
+            <div class="price">12.99$ <span>15.99$</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="Discount">-20%</span>
+          <div class="image1">
+            <img src="/image/image7.webp" alt="" />
+            <div class="icon11">
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="cart-btn">add to card</a>
+              <a href="" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flowr pot</h3>
+            <div class="price">12.99$ <span>15.99$</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="Discount">-5%</span>
+          <div class="image1">
+            <img
+              src="https://m.media-amazon.com/images/I/41UpAD4RcAL._AC_UL640_FMwebp_QL65_.jpg"
+              alt=""
+            />
+            <div class="icon11">
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="cart-btn">add to card</a>
+              <a href="" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flowr pot</h3>
+            <div class="price">12.99$ <span>15.99$</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="Discount">-10%</span>
+          <div class="image1">
+            <img src="/image/f1kk0qk2bewzpmdv3jxd.jpg" alt="" />
+            <div class="icon11">
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="cart-btn">add to card</a>
+              <a href="" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flowr pot</h3>
+            <div class="price">12.99$ <span>15.99$</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="Discount">-13 %</span>
+          <div class="image1">
+            <img src="/image/92926mvw1wc5x.webp" alt="" />
+            <div class="icon11">
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="cart-btn">add to card</a>
+              <a href="" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flowr pot</h3>
+            <div class="price">12.99$ <span>15.99$</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="Discount">-13 %</span>
+          <div class="image1">
+            <img
+              src="https://m.media-amazon.com/images/I/81N2pbCTb0L._AC_UL640_FMwebp_QL65_.jpg"
+              alt=""
+            />
+            <div class="icon11">
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="cart-btn">add to card</a>
+              <a href="" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flowr pot</h3>
+            <div class="price">12.99$ <span>15.99$</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="Discount">-13 %</span>
+          <div class="image1">
+            <img
+              src="https://m.media-amazon.com/images/I/51rsZNLpeAL._AC_UL640_FMwebp_QL65_.jpg"
+              alt=""
+            />
+            <div class="icon11">
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="cart-btn">add to card</a>
+              <a href="" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flowr pot</h3>
+            <div class="price">12.99$ <span>15.99$</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="Discount">-13 %</span>
+          <div class="image1">
+            <img
+              src="https://m.media-amazon.com/images/I/71Ty+3eMCaL._AC_UL640_FMwebp_QL65_.jpg"
+              alt=""
+            />
+            <div class="icon11">
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="cart-btn">add to card</a>
+              <a href="" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flowr pot</h3>
+            <div class="price">12.99$ <span>15.99$</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review" id="review">
+      <h3 class="heading">Customer <span>Review</span></h3>
+      <div class="card-main">
+        <div class="card">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+            quae et libero omnis alias quod repellat minima voluptas, cum magnam
+            hic eveniet a, vel voluptatum incidunt, praesentium ducimus qui
+            earum.
+          </p>
+          <div class="image11">
+            <img src="/image/images-1.jpg" alt="" />
+            <div class="user">
+              <h3>then</h3>
+              <span>Happy</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+        <div class="card">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+            quae et libero omnis alias quod repellat minima voluptas, cum magnam
+            hic eveniet a, vel voluptatum incidunt, praesentium ducimus qui
+            earum.
+          </p>
+          <div class="image11">
+            <img src="/image/images-1.jpg" alt="" />
+            <div class="user">
+              <h3>then</h3>
+              <span>Happy</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+        <div class="card">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+            quae et libero omnis alias quod repellat minima voluptas, cum magnam
+            hic eveniet a, vel voluptatum incidunt, praesentium ducimus qui
+            earum.
+          </p>
+          <div class="image11">
+            <img src="/image/images-1.jpg" alt="" />
+            <div class="user">
+              <h3>then</h3>
+              <span>Happy</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+        <div class="card">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+            quae et libero omnis alias quod repellat minima voluptas, cum magnam
+            hic eveniet a, vel voluptatum incidunt, praesentium ducimus qui
+            earum.
+          </p>
+          <div class="image11">
+            <img src="/image/images-1.jpg" alt="" />
+            <div class="user">
+              <h3>then</h3>
+              <span>Happy</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact </span>us</h1>
+      <div class="row">
+        <form action="">
+          <input type="text" placeholder="name" class="box" />
+          <input type="email" placeholder="email" class="box" />
+          <input type="number" placeholder="number" class="box" />
+          <textarea
+            name=""
+            id=""
+            class="box"
+            placeholder="Message"
+            cols="30"
+            role="10"
+          ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+        <div class="imag">
+          <img src="/image/122.avif" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
